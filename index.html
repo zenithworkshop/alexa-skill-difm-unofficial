@@ -25,6 +25,9 @@
             margin: 0;
             font-size: 30px;
         }
+        #container {
+            padding: 0 1em;
+        }
         form {
             margin: 50px 20px;
         }
@@ -80,19 +83,20 @@
 </head>
 <body>
     <header><h1>Digitally Imported web radio (Non Ufficiale)</h1></header>
-    
-    <h2>Chiave di Ascolto</h2>
-    <p>
-        Per favore, inserisci la Chiave di Ascolto (<b>Listen Key</b>) del tuo account premium di <i>Digitally Imported</i>.<br>
-        Puoi trovare questo codice in fondo alla sezione <i>Player Settings</i> del tuo account sul sito <strong>www.di.fm</strong>.
-    </p>
-    <form id="token-form" action="" method="GET">
-        <input type="hidden" name="state" id="state" value="">
-        <input type="hidden" name="token_type" value="Bearer">
-        <input type="text" id="access_token" name="access_token" value="" placeholder="Listen Key...">
-        <br><br>
-        <input type="submit" value="Collega">
-    </form>
+    <div id="container">
+        <h2>Chiave di Ascolto</h2>
+        <p>
+            Per favore, inserisci la Chiave di Ascolto (<b>Listen Key</b>) del tuo account premium di <i>Digitally Imported</i>.<br>
+            Puoi trovare questo codice in fondo alla sezione <i>Player Settings</i> del tuo account sul sito <strong>www.di.fm</strong>.
+        </p>
+        <form id="token-form" action="" method="GET">
+            <input type="hidden" name="state" id="state" value="">
+            <input type="hidden" name="token_type" value="Bearer">
+            <input type="text" id="access_token" name="access_token" value="" placeholder="Listen Key...">
+            <br><br>
+            <input type="submit" value="Collega">
+        </form>
+    </div>
     <footer>Digitally Imported web radio (Non Ufficiale)</footer>
 
 
