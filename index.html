@@ -16,8 +16,8 @@
         }
         header {
             background-color: #288CFB;
-            padding: 50px;
-            margin-bottom: 100px;
+            padding: 20px;
+            margin-bottom: 30px;
         }
         h1 {
             color: #FFF;
@@ -26,11 +26,11 @@
             font-size: 30px;
         }
         form {
-            margin: 0 100px 0 100px;
+            margin: 50px 20px;
         }
         #access_token {
-            width: 50em;
             display: inline-block;
+            max-width: 30em;
         }
         footer {
             position: absolute;
@@ -41,6 +41,11 @@
             display: block;
             margin:0;
             background-color: #DDD;
+        }
+        @media only screen and (max-width: 600px) {
+            #access_token {
+                max-width: 100%;
+            }
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -73,7 +78,7 @@
         }
     </script>
 </head>
-<body style="">
+<body>
     <header><h1>Digitally Imported web radio (Non Ufficiale)</h1></header>
     
     <h2>Chiave di Ascolto</h2>
